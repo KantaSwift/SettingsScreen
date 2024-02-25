@@ -108,7 +108,7 @@ SettingsNavigationView(
 ````
 
 ## UpComing
--　Support for formats using ScrollView, not just list forms, is also planned.
+- Support for formats using ScrollView, not just list forms, is also planned.
 
 ## Contribution
 I would be happy if you contribute :)
