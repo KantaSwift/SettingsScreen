@@ -9,7 +9,7 @@
 
 - [Installation](#installation)
 - [Basic Usage](#basic-usage)
-- [Tips](#tab-style)
+- [Tips](#tips)
 - [UpComing](#upcoming)
 - [Contribution](#contribution)
 
