@@ -50,7 +50,7 @@ struct SettingsView: View {
 
     var body: some View {
         SettingsNavigationList {
-            SettingsSection(title: "このアプリについて") {
+            SettingsSection(title: "hogehoge") {
                 SettingsNavigationView(.assessment())
                 SettingsNavigationView(.notification())
                 SettingsNavigationView(.colorTheme())
