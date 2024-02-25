@@ -39,3 +39,47 @@ let package = Package(
 
 You can add this package on Xcode.
 See [documentation](https://developer.apple.com/documentation/swift_packages/adding_package_dependencies_to_your_app).
+
+#### Basic Usage
+
+```swift
+import SwiftUI
+import SettingsNavigation
+
+struct SettingsView: View {
+    init() {}
+
+    var body: some View {
+        SettingsNavigationList {
+            SettingsSection(title: "このアプリについて") {
+                SettingsNavigationView(.assessment())
+                SettingsNavigationView(.notification())
+                SettingsNavigationView(.colorTheme())
+                SettingsNavigationView(
+                    .url(
+                        .init(
+                            title: "hoge",
+                            url: "https://example.com"
+                        )
+                    )
+                )
+                SettingsNavigationView(
+                    .custom(
+                        .init(
+                            title: "title",
+                            action: {
+                               // something
+                            }
+                        )
+                    )
+                )
+            }
+            .navigationTitle("設定")
+            .navigationBarTitleDisplayMode(.inline)
+        }
+    }
+}
+```
+
+
+
