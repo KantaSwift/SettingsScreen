@@ -47,7 +47,6 @@ import SwiftUI
 import SettingsNavigation
 
 struct SettingsView: View {
-    init() {}
 
     var body: some View {
         SettingsNavigationList {
