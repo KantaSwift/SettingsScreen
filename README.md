@@ -91,7 +91,7 @@ SettingsNavigationView(.notification())
 ```
 
 #### If you also want to add an icon
--　Please refer to the following writing style
+- Please refer to the following writing style
 
 ```swift
 SettingsNavigationView(.assessment(.original("hoge")))
