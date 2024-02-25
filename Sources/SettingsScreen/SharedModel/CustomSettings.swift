@@ -1,11 +1,11 @@
 import SwiftUI
 
 public struct CustomSettings {
-   public let title: String
-   public let imageType: ImageType
-   public let action: () -> Void
+    let title: String
+    let imageType: ImageType
+    let action: () -> Void
 
-   public init(
+    public init(
         title: String,
         imageType: ImageType = .none,
         action: @escaping () -> Void

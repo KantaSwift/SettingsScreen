@@ -1,9 +1,9 @@
 import SwiftUI
 
 public struct URLSettings {
-    public let title: String
-    public let url: String
-    public let imageType: ImageType
+    let title: String
+    let url: String
+    let imageType: ImageType
 
     public init(
         title: String,

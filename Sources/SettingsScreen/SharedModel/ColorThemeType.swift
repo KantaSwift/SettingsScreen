@@ -1,10 +1,10 @@
 import Foundation
 import UIKit
 
-public enum ColorThemeType: CaseIterable, Codable, Hashable {
+enum ColorThemeType: CaseIterable, Codable, Hashable {
     case light, dark, auto
 
-    public var title: String {
+    var title: String {
         switch self {
         case .light:
             "ライトモード"
@@ -15,7 +15,7 @@ public enum ColorThemeType: CaseIterable, Codable, Hashable {
         }
     }
 
-    public var userInterfaceStyle: UIUserInterfaceStyle {
+    var userInterfaceStyle: UIUserInterfaceStyle {
         switch self {
         case .light:
             .light
@@ -27,7 +27,7 @@ public enum ColorThemeType: CaseIterable, Codable, Hashable {
     }
 }
 
-public extension UIUserInterfaceStyle {
+extension UIUserInterfaceStyle {
     var colorThemeStyle: ColorThemeType {
         switch self {
         case .unspecified:

@@ -1,12 +1,10 @@
 import SwiftUI
-import Client
-import SharedModel
 
-public final class ColorThemeState: ObservableObject {
+final class ColorThemeState: ObservableObject {
     @Published var colorThemeType: ColorThemeType = .auto
     private let colorThemeRepository: ColorThemeRepository
 
-    public init(colorThemeRepository: any ColorThemeRepository) {
+    init(colorThemeRepository: any ColorThemeRepository) {
         self.colorThemeRepository = ColorThemeRepositoryImpl(
             userDefaults: .standard,
             uiApplicationClient: UIApplicationClientImpl()

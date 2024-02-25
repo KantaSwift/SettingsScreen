@@ -1,8 +1,6 @@
 import SwiftUI
-import Utility
-import SharedModel
 
-public struct SettingsLink: View {
+struct SettingsLink: View {
 
     @Environment(\.disclosureIndicatorIsHidden) private var isHidden
 
@@ -16,7 +14,7 @@ public struct SettingsLink: View {
         self.imageType = imageType
     }
 
-    public var body: some View {
+    var body: some View {
         Link(destination: URL(string: url) ?? URL(fileURLWithPath: "")) {
             HStack {
                 imageType.image

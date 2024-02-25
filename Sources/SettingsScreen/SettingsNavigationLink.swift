@@ -1,8 +1,7 @@
 import SwiftUI
 import StoreKit
-import SharedModel
 
-public struct SettingsNavigationLink<Destination: View>: View {
+struct SettingsNavigationLink<Destination: View>: View {
 
     @Environment(\.requestReview) private var requestReview
 
@@ -20,7 +19,7 @@ public struct SettingsNavigationLink<Destination: View>: View {
         self.destination = destination()
     }
 
-    public var body: some View {
+    var body: some View {
          NavigationLink {
             destination
          } label: {

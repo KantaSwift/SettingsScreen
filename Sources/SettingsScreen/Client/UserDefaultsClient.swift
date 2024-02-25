@@ -1,13 +1,13 @@
 import SwiftUI
 
-public struct UserDefaultsClient: DataSource {
-    private let userDefaults: UserDefaults
+struct UserDefaultsClient: DataSource {
+    let userDefaults: UserDefaults
 
-    public init(userDefaults: UserDefaults) {
+    init(userDefaults: UserDefaults) {
         self.userDefaults = userDefaults
     }
 
-    public func data<T: Decodable>(
+    func data<T: Decodable>(
         forKey: String,
         type: T.Type
     ) -> T? {
@@ -22,7 +22,7 @@ public struct UserDefaultsClient: DataSource {
         return nil
     }
 
-    public func set(
+    func set(
         _ value: some Encodable,
         forKey: String
     ) async throws {
@@ -31,7 +31,7 @@ public struct UserDefaultsClient: DataSource {
         userDefaults.set(data, forKey: forKey)
     }
 
-    public func set(_ value: Any?, forKey: String) async {
+    func set(_ value: Any?, forKey: String) async {
         userDefaults.set(value, forKey: forKey)
     }
 }

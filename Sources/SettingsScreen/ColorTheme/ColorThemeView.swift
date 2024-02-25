@@ -1,8 +1,6 @@
 import SwiftUI
-import Client
-import SharedModel
 
-public struct ColorThemeView: View {
+struct ColorThemeView: View {
     @StateObject private var colorThemeState = ColorThemeState(
         colorThemeRepository: ColorThemeRepositoryImpl(
             userDefaults: .standard,
@@ -10,9 +8,7 @@ public struct ColorThemeView: View {
         )
     )
 
-    public init() {}
-
-    public var body: some View {
+    var body: some View {
         Form {
             ForEach(ColorThemeType.allCases, id: \.self) { colorThemeType in
                 HStack {

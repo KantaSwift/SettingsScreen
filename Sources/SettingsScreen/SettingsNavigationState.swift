@@ -1,10 +1,9 @@
-import Client
 import SwiftUI
 
-public final class SettingsNavigationState: ObservableObject {
+final class SettingsNavigationState: ObservableObject {
     private let applicationClient: UIApplicationClient
 
-    public init(applicationClient: UIApplicationClient) {
+    init(applicationClient: UIApplicationClient) {
         self.applicationClient = applicationClient
     }
 

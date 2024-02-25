@@ -1,16 +1,12 @@
 import SwiftUI
 import UIKit
-import Client
-import ColorTheme
-import Utility
-import SharedModel
 
 public struct SettingsNavigationView: View {
 
     @Environment(\.requestReview) private var requestReview
     @StateObject private var settingsNavigationState = SettingsNavigationState(applicationClient: UIApplicationClientImpl())
 
-    let settingsType: SettingsType
+    private let settingsType: SettingsType
 
     public init(_ settingsType: SettingsType) {
         self.settingsType = settingsType

@@ -1,6 +1,5 @@
 import SwiftUI
-
-public protocol DataSource {
+protocol DataSource {
     func data<T: Decodable>(
         forKey: String,
         type: T.Type

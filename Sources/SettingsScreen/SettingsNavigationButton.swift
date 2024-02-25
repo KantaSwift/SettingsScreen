@@ -1,8 +1,6 @@
 import SwiftUI
-import Utility
-import SharedModel
 
-public struct SettingsNavigationButton: View {
+struct SettingsNavigationButton: View {
     @Environment(\.disclosureIndicatorIsHidden) var isHidden
 
     let title: String
@@ -19,7 +17,7 @@ public struct SettingsNavigationButton: View {
         self.action = action
     }
 
-    public var body: some View {
+    var body: some View {
         Button {
             action()
         } label: {
