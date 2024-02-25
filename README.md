@@ -9,7 +9,7 @@
 
 - [Installation](#installation)
 - [Basic Usage](#basic-usage)
-- [Tab Style](#tab-style)
+- [Tips](#tab-style)
 - [UpComing](#upcoming)
 - [Contribution](#contribution)
 
@@ -40,7 +40,7 @@ let package = Package(
 You can add this package on Xcode.
 See [documentation](https://developer.apple.com/documentation/swift_packages/adding_package_dependencies_to_your_app).
 
-#### Basic Usage
+## Basic Usage
 
 ```swift
 import SwiftUI
@@ -81,5 +81,29 @@ struct SettingsView: View {
 }
 ```
 
+## Tips
+
+#### If you want to hide the disclosure indicato
+- It is recommended to use the following view modifier.
+
+```swift
+
+```
+
+#### If you also want to add an icon
+- Using it as shown below will also add an icon.
+
+```swift
+
+````
+
+## UpComing
+-　Support for formats using ScrollView, not just list forms, is also planned.
+
+## Contribution
+I would be happy if you contribute :)
+
+- [New issue](https://github.com/KantaSwift/CustomTabBar/issues/new)
+- [New pull request](https://github.com/KantaSwift/CustomTabBar/compare)
 
 
