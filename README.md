@@ -83,18 +83,29 @@ struct SettingsView: View {
 
 ## Tips
 
-#### If you want to hide the disclosure indicato
+#### If you want to hide the disclosure indicator
 - It is recommended to use the following view modifier.
 
 ```swift
-
+SettingsNavigationView(.notification())
+ .disclosureIndicatorIsHidden(true)
 ```
 
 #### If you also want to add an icon
-- Using it as shown below will also add an icon.
+-　Please refer to the following writing style
 
 ```swift
-
+SettingsNavigationView(.assessment(.original("hoge")))
+SettingsNavigationView(.notification(.system(systemName: "hoge")))
+SettingsNavigationView(
+    .url(
+        .init(
+            title: "hoge",
+            url: "https://example.com",
+            imageType: .none
+        )
+    )
+)
 ````
 
 ## UpComing
@@ -103,7 +114,7 @@ struct SettingsView: View {
 ## Contribution
 I would be happy if you contribute :)
 
-- [New issue](https://github.com/KantaSwift/CustomTabBar/issues/new)
-- [New pull request](https://github.com/KantaSwift/CustomTabBar/compare)
+- [New issue](https://github.com/KantaSwift/SettingsScreen/issues/new)
+- [New pull request](https://github.com/KantaSwift/SettingsScreen/pulls)
 
 
