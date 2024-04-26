@@ -20,6 +20,7 @@ struct ColorThemeView: View {
                             .font(.body)
                     }
                 }
+                .contentShape(Rectangle())
                 .onTapGesture {
                     colorThemeState.setColorTheme(colorThemeType: colorThemeType)
                 }
